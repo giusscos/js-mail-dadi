@@ -4,6 +4,7 @@
  const fullArray = [];
  const tailArray = [];
  const matches = parseInt(prompt('Inserire grandezza array:'));
+ const matchesTail = parseInt(prompt('Inserire grandezza coda array:')) + 1;
 
  if(matches >= 5){
     // Riempimento con numeri casuale array 
@@ -12,7 +13,7 @@
     } 
 
     // Riempo con gli utlimi 5 elementi
-    for (let i = (matches - 1); i > (matches - 6); i--){
+    for (let i = (matches - 1); i > (matches - matchesTail); i--){
         tailArray[i] = fullArray[i];
     } 
     
