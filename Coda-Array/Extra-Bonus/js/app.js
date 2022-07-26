@@ -8,7 +8,7 @@
  if(matches >= 5){
     // Riempimento con numeri casuale array 
     for (let i = 0; i < matches; i++){
-        fullArray[i] = Math.floor(Math.random() * 100).toString();
+        fullArray[i] = Math.floor(Math.random() * 100);
     } 
 
     // Riempo con gli utlimi 5 elementi

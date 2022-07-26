@@ -11,8 +11,8 @@ playButton.addEventListener('click', function() {
 // Riempimento e Confronto Array
     for (let i = 0; i < matches; i++){
         // Riempimento array
-        randomNumPC.push(Math.floor(Math.random() * 6).toString());
-        randomNumPlayer.push(Math.floor(Math.random() * 6).toString());
+        randomNumPC.push(Math.floor(Math.random() * 6) + 1);
+        randomNumPlayer.push(Math.floor(Math.random() * 6) + 1);
     // Confronto elementi array 
         if (randomNumPC[i] > randomNumPlayer[i]){
             countWinPC++;       
